@@ -1,6 +1,7 @@
 
 #genres {
   display: flex;
+
 }
 
 #button1 {
@@ -44,10 +45,8 @@
   }
 
   #searchbar {
-    
+    /* justify-self: center;
+    align-self: center; */
   }
 
-  #btn {
-    width: auto;
-    background-color: red;
-  }
+  

@@ -11,6 +11,7 @@ searchButton.setAttribute('id', 'button');
 searchButton.innerHTML = "Search";
 searchBar.appendChild(searchButton);              
 
+
 const genres = document.createElement('div');
 genres.setAttribute('id', 'genres');
 body.appendChild(genres);
