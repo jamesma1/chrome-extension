@@ -6,10 +6,10 @@ const search = document.createElement('input');
 searchBar.appendChild(search);
 
 
-const button = document.createElement("button");
-button.setAttribute('id', 'button');
-button.innerHTML = "Search";
-searchBar.appendChild(button);              // edit if not working
+const searchButton = document.createElement("button");
+searchButton.setAttribute('id', 'button');
+searchButton.innerHTML = "Search";
+searchBar.appendChild(searchButton);              
 
 const genres = document.createElement('div');
 genres.setAttribute('id', 'genres');
@@ -49,6 +49,7 @@ c.addEventListener('click', () => {
 
 
 
+
 //event listeners
 document.addEventListener('DOMContentLoaded', () => {
     function searchMyQuery() {
@@ -61,6 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
             searchMyQuery();   
         }
     });
+    searchButton.addEventListener('click', () => {
+        searchMyQuery()
+    })
+    
 })
 
 
